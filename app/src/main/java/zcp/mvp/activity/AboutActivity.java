@@ -1,13 +1,14 @@
 package zcp.mvp.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import zcp.mvp.activity.base.BaseActivity;
 import zcp.mvp.R;
 
-public class AboutActivity extends AppCompatActivity {
+public class AboutActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,4 +37,11 @@ public class AboutActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    private void onBack(View view) {
+
+//        getMainController()
+
+    }
+
 }

@@ -21,7 +21,7 @@ public class AboutController extends BaseUiController<AboutController.AboutUi,
         AboutController.AboutUiCallbacks> {
 
 
-    public static AboutController mAboutController;
+    public  AboutController mAboutController;
 
     public interface AboutUi extends BaseUiController.Ui<AboutUiCallbacks> {}
 
@@ -30,12 +30,6 @@ public class AboutController extends BaseUiController<AboutController.AboutUi,
 
     }
 
-    public static AboutController newInstance() {
-        if (mAboutController == null) {
-            mAboutController = new AboutController();
-        }
-        return  mAboutController;
-    }
 
     @Override
     protected AboutUiCallbacks createUiCallbacks(AboutUi ui) {

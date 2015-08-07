@@ -12,7 +12,6 @@ import zcp.mvp.controller.MainController;
 public class App extends Application {
 
 
-
     private MainController mainController;
 
 
@@ -24,7 +23,7 @@ public class App extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        mainController =  MainController.newInstance(AboutController.newInstance());
+        mainController = new MainController(new AboutController());
     }
 
     public MainController getMainController() {

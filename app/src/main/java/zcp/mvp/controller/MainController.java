@@ -11,14 +11,11 @@ public class MainController extends BaseUiController<MainController.MainControll
     private static AboutController mAboutController;
     private HostCallbacks mHostCallbacks;
 
-    private static MainController mMainController;
+    private MainController mMainController;
 
-    public static MainController newInstance(AboutController aboutController) {
+
+    public MainController(AboutController aboutController) {
         mAboutController = aboutController;
-        if (mMainController == null) {
-            mMainController = new MainController();
-        }
-        return mMainController;
     }
 
     @Override
@@ -38,6 +35,7 @@ public class MainController extends BaseUiController<MainController.MainControll
     }
 
     public interface MainUi extends MainControllerUi {
+
 
         void showLoginPrompt();
 
@@ -73,9 +71,6 @@ public class MainController extends BaseUiController<MainController.MainControll
     public void setHostCallbacks(HostCallbacks hostCallbacks) {
         mHostCallbacks = hostCallbacks;
     }
-
-
-
 
 
     //业务

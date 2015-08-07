@@ -1,12 +1,8 @@
 package zcp.mvp.activity;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 
-import zcp.mvp.BaseActivity;
+import zcp.mvp.activity.base.BaseActivity;
 import zcp.mvp.R;
 import zcp.mvp.controller.MainController;
 

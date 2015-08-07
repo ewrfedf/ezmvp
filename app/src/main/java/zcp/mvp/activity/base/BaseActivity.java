@@ -1,4 +1,4 @@
-package zcp.mvp;
+package zcp.mvp.activity.base;
 
 import android.content.Intent;
 import android.graphics.Rect;
@@ -9,6 +9,10 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Window;
 
+import zcp.mvp.AndroidDisplay;
+import zcp.mvp.App;
+import zcp.mvp.Display;
+import zcp.mvp.R;
 import zcp.mvp.controller.MainController;
 
 /**
@@ -27,8 +31,6 @@ public class BaseActivity extends ActionBarActivity
         requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
 
         super.onCreate(savedInstanceState);
-
-
         setContentView(getContentViewLayoutId());
 
         mMainController = App.from(this).getMainController();
