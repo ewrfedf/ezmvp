@@ -14,14 +14,15 @@
  * limitations under the License.
  */
 
-package zcp.mvp.controller;
+package zcp.mvp.controllers;
 
+
+import zcp.mvp.Display;
 
 import java.util.Collections;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
-import zcp.mvp.Display;
 
 abstract class BaseUiController<U extends BaseUiController.Ui<UC>, UC>
         extends BaseController {

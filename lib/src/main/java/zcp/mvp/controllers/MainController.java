@@ -1,4 +1,5 @@
-package zcp.mvp.controller;
+package zcp.mvp.controllers;
+
 
 import zcp.mvp.Display;
 

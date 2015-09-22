@@ -3,8 +3,8 @@ package zcp.mvp;
 import android.app.Application;
 import android.content.Context;
 
-import zcp.mvp.controller.AboutController;
-import zcp.mvp.controller.MainController;
+import zcp.mvp.controllers.AboutController;
+import zcp.mvp.controllers.MainController;
 
 /**
  * Created by Zheng on 15/7/14.

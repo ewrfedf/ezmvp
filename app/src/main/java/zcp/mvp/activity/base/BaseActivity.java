@@ -9,11 +9,12 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Window;
 
+import zcp.mvp.Display;
+
 import zcp.mvp.AndroidDisplay;
 import zcp.mvp.App;
-import zcp.mvp.Display;
 import zcp.mvp.R;
-import zcp.mvp.controller.MainController;
+import zcp.mvp.controllers.MainController;
 
 /**
  * Created by Zheng on 15/7/14.
