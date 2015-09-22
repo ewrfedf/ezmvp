@@ -17,12 +17,20 @@
 package zcp.mvp.controllers;
 
 
-import zcp.mvp.Display;
-
 import java.util.Collections;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
 
+import zcp.mvp.Display;
+
+
+/**
+ * Presenter
+ *
+ *
+ * @param <U>
+ * @param <UC>
+ */
 
 abstract class BaseUiController<U extends BaseUiController.Ui<UC>, UC>
         extends BaseController {
@@ -32,6 +40,7 @@ abstract class BaseUiController<U extends BaseUiController.Ui<UC>, UC>
         void setCallbacks(UC callbacks);
 
         boolean isModal();
+
     }
 
     public interface SubUi {
