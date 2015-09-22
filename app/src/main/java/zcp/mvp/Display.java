@@ -22,4 +22,5 @@ public interface Display {
 
     public void setSupportActionBar(Object toolbar, boolean handleBackground);
 
+    public void showAboutFragment();
 }

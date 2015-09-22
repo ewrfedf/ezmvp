@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 
 import zcp.mvp.activity.AboutActivity;
+import zcp.mvp.fragment.AboutFragment;
 
 /**
  * Created by Zheng on 15/7/14.
@@ -46,9 +47,18 @@ public class AndroidDisplay implements Display {
 
     }
 
+    @Override
+    public void showAboutFragment() {
+        AboutFragment fragment = new AboutFragment();
+        mActivity.getSupportFragmentManager().beginTransaction()
+                .replace(R.id.fragment_main, fragment)
+                .commit();
+    }
+
     private void setToolbarBackground(int color) {
         if (mCanChangeToolbarBackground && mToolbar != null) {
             mToolbar.setBackgroundColor(color);
         }
     }
+
 }
