@@ -1,4 +1,4 @@
-package zcp.mvp.activity.base;
+package zcp.mvp;
 
 import android.content.Intent;
 import android.graphics.Rect;
@@ -9,14 +9,13 @@ import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Window;
 
-import zcp.mvp.Display;
-
-import zcp.mvp.AndroidDisplay;
-import zcp.mvp.App;
-import zcp.mvp.R;
 import zcp.mvp.controllers.MainController;
 
 /**
+ * 绑定 controller
+ * 绑定 display->controller
+ * 初始化 controller
+ *
  * Created by Zheng on 15/7/14.
  */
 public class BaseActivity extends ActionBarActivity

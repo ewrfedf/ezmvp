@@ -4,10 +4,14 @@ import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
 
-import zcp.mvp.activity.AboutActivity;
 import zcp.mvp.fragment.AboutFragment;
 
 /**
+ *
+ * display 对应 activity （由BaseActivity统一创建）
+ *
+ * 所有的UI 操作都在display中完成 主要包括页面跳转、推拉等UI变化
+ *
  * Created by Zheng on 15/7/14.
  */
 public class AndroidDisplay implements Display {

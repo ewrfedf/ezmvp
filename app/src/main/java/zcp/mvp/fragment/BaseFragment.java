@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package zcp.mvp.fragment.base;
+package zcp.mvp.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -25,7 +25,7 @@ import android.view.View;
 import zcp.mvp.Display;
 
 import zcp.mvp.R;
-import zcp.mvp.activity.base.BaseActivity;
+import zcp.mvp.BaseActivity;
 
 
 public abstract class BaseFragment extends Fragment {

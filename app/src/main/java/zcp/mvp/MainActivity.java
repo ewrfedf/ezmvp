@@ -1,9 +1,7 @@
-package zcp.mvp.activity;
+package zcp.mvp;
 
 import android.view.View;
 
-import zcp.mvp.activity.base.BaseActivity;
-import zcp.mvp.R;
 import zcp.mvp.controllers.MainController;
 
 public class MainActivity extends BaseActivity implements MainController.MainUi {

@@ -1,14 +1,9 @@
-package zcp.mvp.activity;
+package zcp.mvp;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.view.Menu;
-
-import zcp.mvp.Display;
-
-import zcp.mvp.R;
-import zcp.mvp.activity.base.BaseActivity;
 
 public class AboutActivity extends BaseActivity {
 

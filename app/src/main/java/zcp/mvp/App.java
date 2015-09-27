@@ -30,8 +30,5 @@ public class App extends Application {
         return mainController;
     }
 
-    public void setMainController(MainController mainController) {
-        this.mainController = mainController;
-    }
 
 }

@@ -4,12 +4,18 @@ package zcp.mvp.controllers;
 import zcp.mvp.Display;
 
 /**
+ *
+ *
  * Created by Zheng on 15/7/14.
  */
 public class MainController extends BaseUiController<MainController.MainControllerUi,
         MainController.MainControllerUiCallbacks> {
 
-    private static AboutController mAboutController;
+    public AboutController getAboutController() {
+        return mAboutController;
+    }
+
+    private final AboutController mAboutController;
     private HostCallbacks mHostCallbacks;
 
     private MainController mMainController;
