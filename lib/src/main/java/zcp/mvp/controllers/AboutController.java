@@ -17,12 +17,19 @@
 package zcp.mvp.controllers;
 
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
 
+@Singleton
 public class AboutController extends BaseUiController<AboutController.AboutUi,
         AboutController.AboutUiCallbacks> {
 
 
     public  AboutController mAboutController;
+    @Inject
+    public AboutController(){
+
+    }
 
     public interface AboutUi extends BaseUiController.Ui<AboutUiCallbacks> {}
 

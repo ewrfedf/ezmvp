@@ -1,0 +1,37 @@
+/*
+ * Copyright 2014 Chris Banes
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package zcp.mvp.util;
+
+import android.os.Handler;
+import android.os.Looper;
+
+import com.google.common.base.Preconditions;
+
+import java.util.concurrent.ExecutorService;
+
+public class PhilmBackgroundExecutor implements BackgroundExecutor {
+
+    private static final Handler sHandler = new Handler(Looper.getMainLooper());
+
+    private final ExecutorService mExecutorService;
+
+    public PhilmBackgroundExecutor(ExecutorService executorService) {
+        mExecutorService = Preconditions.checkNotNull(executorService,
+                "executorService cannot be null");
+    }
+
+}

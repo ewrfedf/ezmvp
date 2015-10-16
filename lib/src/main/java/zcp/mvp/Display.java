@@ -27,4 +27,7 @@ public interface Display {
 
     public void showAboutFragment();
 
+    public boolean hasMainFragment();
+
+
 }

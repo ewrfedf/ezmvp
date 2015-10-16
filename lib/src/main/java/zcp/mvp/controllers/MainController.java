@@ -1,6 +1,9 @@
 package zcp.mvp.controllers;
 
 
+import javax.inject.Inject;
+import javax.inject.Singleton;
+
 import zcp.mvp.Display;
 
 /**
@@ -8,6 +11,7 @@ import zcp.mvp.Display;
  *
  * Created by Zheng on 15/7/14.
  */
+@Singleton
 public class MainController extends BaseUiController<MainController.MainControllerUi,
         MainController.MainControllerUiCallbacks> {
 
@@ -21,7 +25,9 @@ public class MainController extends BaseUiController<MainController.MainControll
     private MainController mMainController;
 
 
+    @Inject
     public MainController(AboutController aboutController) {
+        super();
         mAboutController = aboutController;
     }
 

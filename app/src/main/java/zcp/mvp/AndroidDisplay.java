@@ -59,6 +59,11 @@ public class AndroidDisplay implements Display {
                 .commit();
     }
 
+    @Override
+    public boolean hasMainFragment() {
+        return mActivity.getSupportFragmentManager().findFragmentById(R.id.fragment_main) != null;
+    }
+
     private void setToolbarBackground(int color) {
         if (mCanChangeToolbarBackground && mToolbar != null) {
             mToolbar.setBackgroundColor(color);
